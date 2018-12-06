@@ -1,0 +1,66 @@
+.schemeOne {
+  background-color: #C5F1D4;
+  color: #0000FF;
+}
+.schemeOne #email-address {
+  border-color: #0000FF;
+}
+.schemeOne input[type="submit"] {
+  color: #0000FF;
+}
+.schemeOne .shape {
+  stroke: #0000FF;
+}
+
+h1 {
+  text-align: center;
+}
+
+h1 > span {
+  display: block;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+h1 > span {
+  display: block;
+}
+
+h2 {
+  text-align: center;
+}
+
+#email-address {
+  background-color: #fff;
+}
+
+.svg-wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 320px;
+}
+
+.shape {
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 8px;
+  fill: transparent;
+  border-bottom: 5px solid black;
+  transition: stroke-width .5s, stroke-dashoffset .5s, stroke-dasharray .5s;
+}
+
+.text {
+  position: relative;
+  top: -45px;
+}
+
+.svg-wrapper:hover .shape {
+  stroke-width: 2px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 760;
+}
+
+input[type="submit"] {
+  border: none;
+  text-transform: uppercase;
+}
