@@ -12,6 +12,9 @@
   stroke: #0000FF;
 }
 
+.hidden {
+  visibility: hidden;
+}
 h1 {
   text-align: center;
 }
