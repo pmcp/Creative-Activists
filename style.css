@@ -1,3 +1,9 @@
+body {
+  font-family: brandon-grotesque, sans-serif;
+}
+
+
+
 .schemeOne {
   background-color: #C5F1D4;
   color: #0000FF;
@@ -14,27 +20,38 @@
 
 .hidden {
   visibility: hidden;
+  height: 0;
 }
 h1 {
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 500;
+  font-size: 3.3rem;
+  font-style: italic;
   text-align: center;
 }
 
 h1 > span {
   display: block;
   text-transform: uppercase;
-  font-size: 3rem;
-}
-
-h1 > span {
+  font-size: 5rem;
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 900;
+  font-style: normal;
   display: block;
+
 }
 
 h2 {
   text-align: center;
+  font-family: brandon-grotesque, sans-serif;
+font-weight: 500;
+font-style: normal;
+font-size: 1.6rem;
 }
 
 #email-address {
   background-color: #fff;
+  padding: 1.2rem;
 }
 
 .svg-wrapper {
@@ -44,8 +61,8 @@ h2 {
 }
 
 .shape {
-  stroke-dasharray: 140 540;
-  stroke-dashoffset: -474;
+  stroke-dasharray: 75 540;
+  stroke-dashoffset: -500;
   stroke-width: 8px;
   fill: transparent;
   border-bottom: 5px solid black;
@@ -66,4 +83,9 @@ h2 {
 input[type="submit"] {
   border: none;
   text-transform: uppercase;
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.6rem;
+  
 }
