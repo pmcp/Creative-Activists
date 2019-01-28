@@ -43,7 +43,7 @@ h1 > span {
 }
 
 h2 {
-  padding-left: 2rem;
+  padding-left: 10%;
   padding-top: 2rem;
   font-family: brandon-grotesque, sans-serif;
   font-weight: 500;
@@ -93,10 +93,11 @@ input[type="submit"] {
 }
 
 p {
+  
   font-family: brandon-grotesque, sans-serif;
   font-style: normal;
   font-size: 1.2rem;
-  padding: 0 2rem;
+  padding: 0 10%;
   color: #000;
   line-height: 1.8rem;
 
@@ -107,6 +108,7 @@ p.introduction {
   line-height: 2.8rem;
   color: #0000FF;
   text-align: center;
+  padding: 0 20%;
   font-family: brandon-grotesque, sans-serif;
   font-style: normal;
   font-weight: 500;
