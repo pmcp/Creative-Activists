@@ -43,7 +43,8 @@ h1 > span {
 }
 
 h2 {
-  text-align: center;
+  padding-left: 2rem;
+  padding-top: 2rem;
   font-family: brandon-grotesque, sans-serif;
   font-weight: 500;
   font-size: 1.8rem;
@@ -91,8 +92,26 @@ input[type="submit"] {
   
 }
 
+p {
+  font-family: brandon-grotesque, sans-serif;
+  font-style: normal;
+  font-size: 1.2rem;
+  padding: 0 2rem;
+  color: #000;
+  line-height: 1.8rem;
+
+}
 
 
+p.introduction {
+  line-height: 2.8rem;
+  color: #0000FF;
+  text-align: center;
+  font-family: brandon-grotesque, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
 @media (max-width: 850px) {
   h1 {
     font-size: 2rem;
@@ -109,6 +128,36 @@ input[type="submit"] {
 }
 
 
+
+.link {
+  position: relative;
+  color: #0000FF;
+}
+.link:after {
+  content: '';
+  position: absolute;
+  bottom: -.4em;
+  left: 50%;
+  right: 50%;
+  height: 1px;
+  background: currentColor;
+  transition: all ease .2s;
+}
+.link:hover:after {
+  left: 0;
+  right: 0;
+  height: 2px;
+}
+.link:before {
+  position: absolute;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  left: -10px;
+  color: #eee;
+  opacity: .3;
+  font-weight: 100;
+  font-size: .8em;
+}
 
 
 @media (max-width: 500px) {
@@ -150,4 +199,10 @@ input[type="submit"] {
   }
 }
 
+.italic {
+  font-style:italic;
+}
 
+.bold {
+  font-weight:700;
+}
