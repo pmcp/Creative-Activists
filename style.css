@@ -7,17 +7,22 @@ body {
 }
 
 nav {
-  /* position: fixed; */
-  left: 20px;
+  position: fixed;
+  width: 0;
+  left: 0;
   height: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
   top: 0;
-  justify-content: space-evenly;
 } 
 
-nav > a {
+nav ul {
+  
+  list-style: none;
+}
+
+nav ul li {
   transform: rotate(-90deg);
 justify-content: space-evenly;
 }
@@ -210,6 +215,18 @@ p.introduction {
     display: block;
   }
 }
+
+
+
+
+@media (max-width: 960px) {
+
+  nav {
+    left: -16px;
+  } 
+  
+}
+
 
 
 
