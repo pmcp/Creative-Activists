@@ -1,28 +1,73 @@
 body {
   font-family: brandon-grotesque, sans-serif;
+  font-family: brandon-grotesque, sans-serif;
+  border-width: 10px;
+  border-color: HSL(157, 100%, 62%);
+  border-style: solid;
+  padding: 60px;
 }
 
+nav {
+  /* position: fixed; */
+  left: 20px;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  justify-content: space-evenly;
+} 
 
+nav > a {
+  transform: rotate(-90deg);
+justify-content: space-evenly;
+}
 
-.schemeOne {
-  background-color: #C5F1D4;
-  color: #0000FF;
-}
-.schemeOne #email-address {
-  border-color: #0000FF;
-}
-.schemeOne input[type="submit"] {
-  color: #0000FF;
-}
-.schemeOne .shape {
-  stroke: #0000FF;
-}
 
 .hidden {
   visibility: hidden;
   height: 0;
 }
+
+.colorOne {
+  background-color: HSL(157, 100%, 62%);
+}
+
+.colorTwo {
+  background-color: HSL(70, 100%, 80%);
+}
+
+            /*
+
+   DEBUG GRID
+   http://tachyons.io/docs/debug-grid/
+
+   Can be useful for debugging layout issues
+   or helping to make sure things line up perfectly.
+   Just tack one of these classes onto a parent element.
+
+*/
+
+.debug-grid {
+  background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAFElEQVR4AWPAC97/9x0eCsAEPgwAVLshdpENIxcAAAAASUVORK5CYII=) repeat top left;
+}
+
+.debug-grid-16 {
+  background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAMklEQVR4AWOgCLz/b0epAa6UGuBOqQHOQHLUgFEDnAbcBZ4UGwDOkiCnkIhdgNgNxAYAiYlD+8sEuo8AAAAASUVORK5CYII=) repeat top left;
+}
+
+.debug-grid-8-solid {
+  background:white url(data:image/gif;base64,R0lGODdhCAAIAPEAAADw/wDx/////wAAACwAAAAACAAIAAACDZQvgaeb/lxbAIKA8y0AOw==) repeat top left;
+}
+
+.debug-grid-16-solid {
+  background:white url(data:image/gif;base64,R0lGODdhEAAQAPEAAADw/wDx/xXy/////ywAAAAAEAAQAAACIZyPKckYDQFsb6ZqD85jZ2+BkwiRFKehhqQCQgDHcgwEBQA7) repeat top left;
+}
+
+
+
 h1 {
+  color: #0000FF;
   margin-top: 5rem;
   font-family: brandon-grotesque, sans-serif;
   font-weight: 500;
@@ -43,15 +88,42 @@ h1 > span {
 }
 
 h2 {
-  padding-left: 10%;
-  padding-top: 2rem;
+  color: #0000FF;
+  text-transform: uppercase;
   font-family: brandon-grotesque, sans-serif;
-  font-weight: 500;
+  font-weight: 700;
+  font-size: 3rem;
+  font-style: normal;
+  text-align: center;
+}
+
+h3 {
+  color: #0000FF;
+  text-transform: uppercase;
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 700;
   font-size: 1.8rem;
   font-style: normal;
+  text-align: center;
+
+}
+
+section {
+  padding-bottom: 2em;
+}
+section > div {
+  transform: translate(0, -4.5em);
+} 
+
+
+a {
+  color: #0000FF;
+
 }
 
 #email-address {
+  border: none;
+  color: #0000FF;
   background-color: #fff;
   padding: 1.2rem;
 }
@@ -67,20 +139,21 @@ h2 {
   stroke-dashoffset: -500;
   stroke-width: 8px;
   fill: transparent;
-  border-bottom: 5px solid black;
+  stroke: #0000FF;
+  border: 50px solid black;
   transition: stroke-width .5s, stroke-dashoffset .5s, stroke-dasharray .5s;
 }
 
-.text {
-  position: relative;
-  top: -45px;
-}
+
 
 .svg-wrapper:hover .shape {
   stroke-width: 2px;
   stroke-dashoffset: 0;
   stroke-dasharray: 760;
+  
 }
+
+
 
 input[type="submit"] {
   border: none;
@@ -89,11 +162,11 @@ input[type="submit"] {
   font-weight: 700;
   font-style: normal;
   font-size: 1.6rem;
+  color: #0000FF;
   
 }
 
 p {
-  
   font-family: brandon-grotesque, sans-serif;
   font-style: normal;
   font-size: 1.2rem;
@@ -104,6 +177,13 @@ p {
 }
 
 
+.text {
+  position: relative;
+  top: -45px;
+}
+
+/* 
+
 p.introduction {
   line-height: 2.8rem;
   color: #0000FF;
@@ -113,7 +193,10 @@ p.introduction {
   font-style: normal;
   font-weight: 500;
   font-size: 1.8rem;
-}
+} */
+
+
+
 @media (max-width: 850px) {
   h1 {
     font-size: 2rem;
@@ -129,37 +212,6 @@ p.introduction {
   }
 }
 
-
-
-.link {
-  position: relative;
-  color: #0000FF;
-}
-.link:after {
-  content: '';
-  position: absolute;
-  bottom: -.4em;
-  left: 50%;
-  right: 50%;
-  height: 1px;
-  background: currentColor;
-  transition: all ease .2s;
-}
-.link:hover:after {
-  left: 0;
-  right: 0;
-  height: 2px;
-}
-.link:before {
-  position: absolute;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
-  left: -10px;
-  color: #eee;
-  opacity: .3;
-  font-weight: 100;
-  font-size: .8em;
-}
 
 
 @media (max-width: 500px) {
