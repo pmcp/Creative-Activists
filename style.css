@@ -4,7 +4,6 @@ body {
   border-width: 10px;
   border-color: HSL(157, 100%, 62%);
   border-style: solid;
-  padding: 60px;
 }
 
 nav {
@@ -251,8 +250,22 @@ p.introduction {
   h2 {
     font-size: 1rem;
   }
+
+
 }
 
+
+
+@media (max-width: 500px) {
+  h3{
+    font-size: 1rem;
+  }
+
+section > div {
+  transform: translate(0, -2em);
+} 
+
+}
 .italic {
   font-style:italic;
 }
