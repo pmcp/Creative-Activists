@@ -1,11 +1,15 @@
 body {
   font-family: brandon-grotesque, sans-serif;
   font-family: brandon-grotesque, sans-serif;
+  background-color: HSL(157, 100%, 62%);;
+}
+
+.wrapper {
   border-width: 10px;
   border-color: HSL(157, 100%, 62%);
   border-style: solid;
+  background-color: white;
 }
-
 nav {
   position: fixed;
   width: 0;
